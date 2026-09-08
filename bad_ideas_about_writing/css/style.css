@@ -214,7 +214,7 @@ font-size: .8em;
 /* for the custom "audio player box" design bits */
 
 .episode-container {
-margin: 1%;
+margin: 1% 6% 1% 1%;
 width:92%;
 background-color: #ffffff;
 z-index: 1;
@@ -278,7 +278,7 @@ border:none;
 height:520px;
 margin: 0 auto;
 display:block; 
-width:98%;
+margin: 1% 6% 1% 1%;
 }
 
 a.chapter-nav {
