@@ -276,8 +276,9 @@ object.standalone-chapter {
 background-color: #ffffff;
 border:none;
 height:520px;
-display:block; 
 margin: 1% 6% 1% 1%;
+width:92%;
+display:block; 
 }
 
 a.chapter-nav {
