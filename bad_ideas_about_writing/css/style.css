@@ -1,0 +1,307 @@
+
+/* for overall template design */
+
+html, body {
+  padding: 0;
+	max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+  color: #444444;
+  background:#E8F5E9;
+  font-family: Constantia, 'Lucida Bright', 'DejaVu Serif', Georgia, 'serif';
+max-width: 100%;
+}
+
+p {
+font-size: 1em;
+}
+
+.top-header-wrap {
+margin: 0;
+padding-top:1%;
+height:auto;
+background-color: white;  
+}
+
+h1.top-header {
+vertical-align: middle;}
+
+.logo {
+float:left;
+vertical-align: middle;
+margin: 0 1%;
+width:142px; 
+}
+
+.container {
+width:80%;
+margin-left:12%;
+margin-right:12%;
+	font-size: 1.6em;
+}
+
+a {
+  color: #0B6041;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+text-decoration: underline;
+}
+  a:visited {
+    color: #0B6041;
+  }
+  a:hover, a:focus {
+    color: #119263;
+    font-weight: bold;
+	text-decoration: underline;
+  }
+
+
+hr.dashed-divider{
+	border-top: 2px dashed #444444;
+  border-bottom:none;
+align:center;
+	width:72%;
+}
+img {
+  border-radius: 12px;
+  margin-left:0;
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+border-bottom: none;
+font-size: 4em;
+text-transform: none;
+color: #0B6041;
+align: center;
+}
+
+h2 {
+font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+border-bottom: none;
+ font-size: 2em;
+ text-transform: none;
+color:#444444;
+line-height: 0.4;
+}
+
+h3 {
+font-family: Constantia, 'Lucida Bright', 'DejaVu Serif', Georgia, 'serif';
+border-bottom: none;
+font-size: 1.4em;
+text-transform: none;
+color:#E8F5E9;
+font-weight:bold;
+background: #444444;
+max-width: 94%;
+	padding: 14px;
+	line-height: 1em;
+margin:1% 0 0 0;
+}
+
+h4 {
+font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+font-weight: normal; 
+color:#444444;
+border:none;
+border-bottom: 2px solid #0B6041;
+background:#ffffff;
+padding: 1% 2%;
+margin:1% 0 0 0;
+}
+
+.footer {
+clear:both;
+margin: 0;
+width:100%;
+color:#E8F5E9;
+background: #444444;
+font-family: Constantia, 'Lucida Bright', 'DejaVu Serif', Georgia, 'serif';
+font-size: 1.4em;
+font-weight: bold; 
+line-height: 2em;
+padding: 16px;
+}
+
+a.footer {
+	color:#E8F5E9;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+text-decoration: none;
+}
+
+a.footer:hover, a:focus {
+	text-decoration: underline;
+  }
+
+.toc {
+		border:none;
+		text-align: left;
+	}
+
+
+/* for each accordion panel expanding menu */
+
+.accordion {
+font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+font-size: .9em;
+text-transform:none;
+color:#444444;
+border:none;
+border-bottom: 2px solid #0B6041;
+background:#E8F5E9;	
+line-height: 0.9;
+cursor: pointer;
+padding: 18px;
+width:93.75%;
+text-align: left;
+outline: none;
+transition: 0.4s;
+}
+
+.active, .accordion:hover {
+	color:#0B6041;
+	background:#FFFFFF;
+}
+
+.accordion:after {
+content: '\2304';
+float: right;
+}
+
+.active:after {
+content: "\2303";
+background:#FFFFFF;
+}
+
+.panel {
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.2s ease-out;
+margin: 0 12% 0% 2%;
+font-size: .75em;
+}
+
+.keywords{
+font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+
+div.chapter {
+border:none;
+z-index: 1;
+}
+
+object.chapter {
+background-color: #ffffff;
+border:none;
+height:520px;
+margin: 0 auto;
+display:block; 
+width:98%;
+}
+
+.download-ref {
+font-size: .8em;
+}
+
+
+/* for the custom "audio player box" design bits */
+
+.episode-container {
+margin: 1%;
+width:inherit;
+background-color: #ffffff;
+z-index: 1;
+padding-bottom: .25%;
+}
+
+.episode-info {
+display: inline-flex;
+align-items: center;
+margin-top:1.5%;
+}
+
+.logo-small {
+width:12%; 
+min-width: 76px;
+margin: 0 1% 0 4%;
+}	
+.episode-metadata {
+line-height: .9em;	
+padding: 0.5%;
+}
+
+.episode-title {
+font-weight: bold;
+}
+.episode-date {
+font-size:.75em;
+text-transform:uppercase;
+font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+
+.episode {
+width:94%;
+margin-bottom:2%;
+}
+
+audio {
+  display: block;
+   margin-left: auto;
+  margin-right: auto;
+}
+
+controls.episode {
+	border-radius: 12px;	
+}
+
+/* for individual chapter pages */
+
+p.standalone-chapter {
+font-size: .75em;
+width: 92%;}
+
+p.standalone-keywords{
+font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+font-size: .75em;
+}
+
+object.standalone-chapter {
+background-color: #ffffff;
+border:none;
+height:520px;
+margin: 0 auto;
+display:block; 
+width:98%;
+}
+
+a.chapter-nav {
+text-decoration: none;
+font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+font-size: 2em;
+color: #444444;
+font-weight: bold;	
+text-transform: none;
+line-height: 0.9;
+}
+a.chapter-nav:hover {
+	 color: green;
+}
+div.chapter-nav {
+font-size:80%;
+	align:center;
+}
+.chapter-nav-prev {
+align:left;
+float:left;
+}
+.chapter-nav-next {
+align:right;
+float:right;
+}
