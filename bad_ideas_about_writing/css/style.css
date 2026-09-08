@@ -141,8 +141,8 @@ a.footer:hover, a:focus {
   }
 
 .toc {
-		border:none;
-		text-align: left;
+border:none;
+text-align: left;
 	}
 
 
@@ -215,7 +215,7 @@ font-size: .8em;
 
 .episode-container {
 margin: 1%;
-width:98%;
+width:92%;
 background-color: #ffffff;
 z-index: 1;
 padding-bottom: .25%;
