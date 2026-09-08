@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Acknowledgements &amp; Credits | Bad Ideas About Writing</title>
+<link rel="stylesheet" href="css/style.css"/>
+<script>
+	document.addEventListener("play", function(evt) {
+ if(this.$AudioPlaying && this.$AudioPlaying !== evt.target) {
+  this.$AudioPlaying.pause();
+ }
+ this.$AudioPlaying = evt.target;
+}, true);
+	</script>
+<script>	
+var linksArr = document.getElementsByTagName('A');
+
+console.log(linksArr);
+console.log(linksArr[0].hasAttribute('data-links'));
+
+for (var i = 0; i < linksArr.length; i++) {
+  if (linksArr[0].hasAttribute('data-links')) {
+    var linksList = linksArr[i].getAttribute('data-links').split(',');
+    console.log(linksList);
+    console.log(linksList.length);
+    var index = getRandomInt(0,linksList.length);
+    console.log(index);
+    linksArr[i].setAttribute('href', linksList[index].trim());
+  }
+}
+
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+</script>
+	
+<link rel="stylesheet" href="css/style.css"/>
+	
+</head>
+
+<body>
+<div class="top-header-wrap"><div class="top-header">	
+<a href="index.html"><img class="logo" src="images/badideasaboutwriting_logo.jpg" alt= "Bad Ideas About Writing thumbnail image: a row of green school chairs and a title banner"  /></a>
+	<h1><em>Bad Ideas About Writing</em>, <br>
+	Chapter by Chapter</h1>
+</div>	<hr style="clear:both" color="#F1F9DE"></div>
+<div class="container">	
+	<h2>Acknowledgements</h2>
+<p class="standalone-chapter">Thanks of course to Cheryl Ball, Drew Loewe, Kyle Stedman, and all the authors who wrote and recorded segments of this book + podcast project. Kyle's chosen theme music for each podcast episode is <a href="https://nctrnm.bandcamp.com/track/parade">"Parade" by nctrnm</a>.</p>
+	<p class="standalone-chapter">I also thank my colleagues, friends, and family who offered comments and feedback along the way as I designed and developed this web production-- particularly Caroline Koons, Shannon Lodoen, Angela Beck, and my <a href="https://github.com/jches">genius brother</a> for his generous coding and hosting advice.	Thanks also to Ashton McDonald, the student research assistant who carefully helped organize and rename all the separate chapter PDFs.</p>
+<p class="standalone-chapter">One last time: the book, the podcast, and this website are all licensed with a Creative Commons Attribution 4.0 International license.</p>
+
+		<h2>Further Reading</h2>
+<p class="standalone-chapter">The original edited collection <a href="https://textbooks.lib.wvu.edu/badideas/badideasaboutwriting-book.pdf"><em>Bad Ideas About Writing</em> is available in full PDF form from West Virginia University Libraries.</a></p>
+<p class="standalone-chapter">A "final chapter/episode" of Kyle's reflections can be found, along with a <a href="https://kairos.technorhetoric.net/28.2/inventio/stedman/index.html">reflective web-text in volume 28.2 of <em>Kairos: A Journal of Rhetoric, Technology, and Pedagogy</em></a>
+	<br></p>
+<p class="standalone-chapter">You may also be interested in <a href="https://wacclearinghouse.org/books/perspectives/bad/"><em>Bad Ideas about AI and Writing: Generative Practices for Teaching, Learning, and Communication</em></a>, which Kyle has begun podcasting as well (<a href="https://open.spotify.com/show/033E57HAEV2o6OI1GVtCh4?si=95-vxWEDQTGgSDDyuhuiRw&nd=1&dlsi=95892fd609944f01">on Spotify</a> or wherever you get your podcasts). </p>
+<p class="standalone-chapter">Coming soon, we will also have <a href="https://www.bad-ideas-scientific-writing.com/">Bad Ideas about Scientific Writing</a>. Eventually someone will podcast that one too, hopefully!</p>
+<br>
+<br>
+<br>
+<br>
+	
+</div>
+</div>
+<div class="footer"> 
+<a href="./index.html" class="footer">Index</a> | <a href="./random.html" class="footer">Random&nbsp;Chapter</a> | <a href="./about.html" class="footer">Who&nbsp;Made&nbsp;This?</a> | <a href="#" class="footer">Acknowledgements&nbsp;and&nbsp;credits</a> 
+		</div>
+			
+</body>		
+</html>
