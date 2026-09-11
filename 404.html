@@ -1,10 +1,43 @@
----
-layout: default
-title: "404: Page not found"
-permalink: 404.html
----
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bad Ideas About Writing, Chapter by Chapter</title>
+<link rel="stylesheet" href="css/style.css"/>
 
-<div class="page">
-  <h1 class="page-title">404: Page not found</h1>
-  <p class="lead">Sorry, we've misplaced that URL or it's pointing to something that doesn't exist. <a href="{{ site.baseurl }}">Head back home</a> to try finding it again.</p>
+</head>
+<body>
+	<!-- page header design -->
+<div id="top" class="top-header-wrap"><div class="top-header">	
+<img class="logo" src="images/badideasaboutwriting_logo.jpg" alt= "Bad Ideas About Writing thumbnail image: a row of green school chairs and a title banner"  />
+	<h1><em>Bad Ideas About Writing</em>, <br>
+	Chapter by Chapter</h1>
+</div><hr style="clear:both" color="white"></div>
+<!-- intro overview -->
+<div class="container">	
+<p>Nothing here. Start at <a href="/bad_ideas_about_writing/chapter01.html">the beginning</a>? Or go back to the <a href-"/bad_ideas_about_writing/index.html">main index</a>.</p>
+<br>
 </div>
+<br>
+<br>
+<br>
+	<div class="footer"> 
+<a href="#top" class="footer">Back to top</a> | <a href="./random.html" class="footer">Random&nbsp;Chapter</a> | <a href="./about.html" class="footer">Who&nbsp;Made&nbsp;This?</a> | <a href="./credits.html" class="footer">Acknowledgements&nbsp;and&nbsp;credits</a> 
+		</div>
+	<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>	
+</body>		
+</html>
